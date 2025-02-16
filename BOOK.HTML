@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - ANKEET KI KALAM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #20a3c4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #524e4e;
+            color: rgb(11, 181, 211);
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: hsl(51, 85%, 46%);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: rgb(238, 245, 244);
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .book, .welcome, .featured-book, .about-me, .latest-updates, .testimonials, .call-to-action, .purchase {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .book h2, .welcome h2, .featured-book h2, .about-me h2, .latest-updates h2, .testimonials h2, .call-to-action h2, .purchase h2 {
+            color: hsl(273, 83%, 50%);
+        }
+        .book p, .welcome p, .featured-book p, .about-me p, .latest-updates ul, .testimonials blockquote, .call-to-action p, .purchase p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #333;
+            color: rgb(153, 18, 18);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .btn-buy {
+            background-color: hsl(51, 85%, 46%);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .book-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ANKEET KI KALAM</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shayari.html">Shayari</a>
+        <a href="poems.html">Poems</a>
+        <a href="stories.html">Stories</a>
+        <a href="purchase.html">Purchase</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="welcome">
+            <h2>Welcome to ANKEET KI KALAM Books</h2>
+            <p>Explore a collection of my published books, each filled with heartfelt poetry, inspiring stories, and profound reflections. Dive into the world of emotions and experiences through my literary works.</p>
+        </div>
+        <div class="featured-book">
+            <h2>Featured Book</h2>
+            <div class="book">
+                <img src="BOOK.jpg" alt="Book Cover" class="book-image">
+                <h3>संघर्ष की राहें : लड़को की आपबीती की कहानी</h3>
+                <p>Discover a collection of poems that capture the essence of life's emotions and experiences. From joy to sorrow, love to loss, each poem is a journey through the human spirit.</p>
+                <p><strong>Price:</strong> $19.99</p>
+                <p><strong>Payment Options:</strong> UPI, Net Banking, Credit/Debit Cards</p>
+                <p><a href="payment.html" class="btn-buy">Buy Now</a></p>
+            </div>
+        </div>
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>Hi, I'm Ankeet, a passionate poet and writer. Through my words, I aim to capture the essence of life's emotions and experiences. Whether it's the joy of a new beginning, the pain of a farewell, or the quiet moments of reflection, my poetry seeks to resonate with readers on a profound level. Join me on this literary journey as we explore the beauty of language and the depth of the human spirit.</p>
+        </div>
+        <div class="latest-updates">
+            <h2>Latest Updates</h2>
+            <ul>
+                <li>New poetry collection released: "Whispers of the Heart"</li>
+                <li>Upcoming poetry reading event on March 15th</li>
+                <li>Check out my latest story: "Echoes of the Past"</li>
+            </ul>
+        </div>
+        <div class="testimonials">
+            <h2>What Readers Say</h2>
+            <blockquote>"Ankeet's poetry is a journey of emotions, beautifully written and deeply moving." - Reader A</blockquote>
+            <blockquote>"I felt every word and could relate to the profound messages in Ankeet's work." - Reader B</blockquote>
+        </div>
+        <div class="call-to-action">
+            <h2>Explore More</h2>
+            <p>Delve into my collection of books, poems, shayari, and stories. Let the words transport you to a world of emotions and reflections.</p>
+            <p><a href="poems.html" class="btn-buy">Read More Poems</a></p>
+        </div>
+        <div class="purchase">
+            <h2>Purchase</h2>
+            <p>Buy my books and support my work. Payment options include UPI, Net Banking, and Credit/Debit Cards.</p>
+            <p><a href="payment.html" class="btn-buy">Buy Now</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 ANKEET KI KALAM. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript to handle redirection to new pages
+        document.querySelectorAll('nav a').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.location.href = link.getAttribute('href');
+            });
+        });
+    </script>
+</body>
+</html>

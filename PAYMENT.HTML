@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - ANKEET KI KALAM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #20a3c4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #524e4e;
+            color: rgb(11, 181, 211);
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: hsl(51, 85%, 46%);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: rgb(238, 245, 244);
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .payment, .welcome {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .payment h2, .welcome h2 {
+            color: hsl(273, 83%, 50%);
+        }
+        .payment p, .welcome p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #333;
+            color: rgb(153, 18, 18);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ANKEET KI KALAM</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shayari.html">Shayari</a>
+        <a href="POETRY.HTML">Poems</a>
+        <a href="STORY.HTML">Stories</a>
+        <a href="BUY.HTML">Purchase</a>
+        <a href="BOOK.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="welcome">
+            <h2>Thank You for Your Purchase</h2>
+            <p>Please use the following UPI details to complete your payment:</p>
+        </div>
+        <div class="payment">
+            <h2>UPI Details</h2>
+            <p><strong>UPI ID:</strong> yourupiid@example.com</p>
+            <p><strong>Amount:</strong> $19.99</p>
+            <p><strong>Note:</strong> Please mention the book title in the payment note.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 ANKEET KI KALAM. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript to handle redirection to new pages
+        document.querySelectorAll('nav a').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.location.href = link.getAttribute('href');
+            });
+        });
+    </script>
+</body>
+</html>
